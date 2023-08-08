@@ -1,0 +1,46 @@
+.boxes {
+    display: none;
+}
+
+@media screen and (min-width: 1200px) {
+.boxes {
+    display: block;
+    padding-bottom: 94px;
+}
+
+.boxes__list {
+    display: flex;
+}
+
+.boxes__item {
+    flex-basis: calc((100% - 60px) / 3);
+        
+    &:not(:last-child) {
+    margin-right: 30px;
+    }
+}
+
+.boxes__wrapper {
+    position: relative;
+}
+
+.boxes__title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 370px;
+    height: 70px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: var(--background-color);
+    background-color: rgba(47, 48, 58, 0.8);
+    }
+}

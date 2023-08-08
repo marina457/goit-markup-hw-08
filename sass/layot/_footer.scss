@@ -1,0 +1,219 @@
+.footer {
+    text-align: center;
+    padding: 60px 0px;
+    background: var(--secondary-background-color);
+}
+
+.footer__flex-container {
+    display: block;
+    margin: 0;
+    padding: 0px;
+
+}
+
+.footer__list {
+    margin-top: 28px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    list-style: none;
+    color: var(--background-color);
+} 
+
+.footer__link {
+    display: block;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+}
+
+.footer__link {
+    margin-bottom: 12px;
+}
+
+.color {
+    color: var(--background-color);
+}
+
+.footer__icon-container {
+    display: block;
+    margin-top: 60px;
+    text-align: center;
+}
+
+.footer__text-icon {
+    padding-top: 10px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: var(--background-color)
+}
+
+.footer__list-icon {
+    display: flex;
+    justify-content: center;
+}
+
+.footer__item-icon:not(:last-child) {
+    margin-right: 10px;
+}
+
+.footer__link-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    width: 44px;
+    height: 44px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.1);
+
+    &:hover,
+    &:focus {
+    background-color: var(--accent-color);
+    }
+}
+
+.footer__subscribe-box {
+    margin-top: 60px;
+}
+
+.footer__subscribe-title {
+    padding-top: 10px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--background-color);
+    text-decoration: none;
+    text-align: center;
+
+}
+
+.footer__subscribe-input {
+    margin-bottom: 20px;
+    padding: 13px 16px;
+    
+    justify-content: center;
+    align-items: center;
+    outline: none;
+
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    color: rgba(255, 255, 255, 0.6);
+    width: 100%;
+    height: 50px;
+    background: var(--secondary-background-color);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+}
+
+.footer__subscribe-submit {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-left: 12px;
+    width: 200px;
+    min-height: 43px;
+    background-color: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    padding: 0;
+    border: none;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    color: var(--background-color);
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+    &:hover,
+    &:focus {
+    background-color: #188CE8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    }
+}
+
+.footer__subscribe-icon {
+    margin-left: 10px;
+}
+
+@media screen and (min-width: 768px) {
+    .footer__flex-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px 165px;
+    }
+
+    .footer__icon-container {
+        margin-top: 0px;
+    }
+
+    .footer__text-icon {
+        padding-bottom: 10px;
+    }
+
+    .footer__subscribe-box {
+        margin-top: 0px;
+        padding: 0;
+        
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    .footer__flex-container {
+        display: flex;
+        justify-content: center;
+        text-align: left;
+        gap: 70px;
+    }
+
+    .footer__subscribe-box {
+        margin-left: 23px;
+    
+    }
+
+    .footer__subscribe-title {
+        text-align: left;
+        }
+
+    .footer__text-icon {
+        text-align: left;
+    }
+
+    .footer__list {
+        margin-bottom: 0;
+    }
+
+    .footer__subscribe-input {
+        margin: 0 12px 0 0;
+        width: 358px;
+    }
+}
